@@ -1,0 +1,3 @@
+C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/CMakeFiles/Splatoon2_Credits.dir
+C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/CMakeFiles/rebuild_cache.dir

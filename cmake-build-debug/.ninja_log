@@ -1,0 +1,7 @@
+# ninja log v5
+491	610	7350616313185552	Splatoon2-Credits.exe	e9ce9c5ecd07837f
+3	10	0	clean	635033cde9a0c418
+4	525	7350617982359227	CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj	5e6ea3fb82de9076
+535	625	7350617983330084	Splatoon2_Credits.exe	9212dce6f38ff5a6
+6	475	7350618862832006	CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj	5e6ea3fb82de9076
+475	577	7350618863813875	Splatoon2_Credits.exe	9212dce6f38ff5a6

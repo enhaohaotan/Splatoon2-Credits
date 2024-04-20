@@ -14,10 +14,10 @@ class Shader
 {
 public:
     // the program ID
-    unsigned int ID;
+    GLuint ID;
 
     // constructor reads and builds the Shader
-    Shader(const char* vertexPath, const char* fragmentPath);
+    Shader(const GLchar* vertexPath, const GLchar* fragmentPath);
     ~Shader();
     // use/activate the Shader
     void use() const;
@@ -25,7 +25,7 @@ public:
 //    void setBool1(const std::string &name, bool v0) const;
 //    void setInt1(const std::string &name, int v0) const;
 //    void setFloat1(const std::string &name, float v0) const;
-    void setUniform4f(const std::string &name, float v0, float v1, float v2, float v3) const;
+    void setUniform4f(const std::string &name, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3) const;
 };
 
 

@@ -1,6 +1,6 @@
 #include "Shader.h"
 
-Shader::Shader(const char *vertexPath, const char *fragmentPath)
+Shader::Shader(const GLchar *vertexPath, const GLchar *fragmentPath)
 {
     std::string vertexCode;
     std::string fragmentCode;
@@ -30,12 +30,12 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
         std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
     }
 
-    const char* vShaderCode = vertexCode.c_str();
-    const char* fShaderCode = fragmentCode.c_str();
+    const GLchar* vShaderCode = vertexCode.c_str();
+    const GLchar* fShaderCode = fragmentCode.c_str();
 
-    unsigned int vertex, fragment;
-    int success;
-    char infoLog[512];
+    GLuint vertex, fragment;
+    GLint success;
+    GLchar infoLog[512];
 
     vertex = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertex, 1, &vShaderCode, nullptr);
@@ -96,7 +96,7 @@ void Shader::use() const
 //    glUniform1f(glGetUniformLocation(ID, name.c_str()), value);
 //}
 
-void Shader::setUniform4f(const std::string &name, float v0, float v1, float v2, float v3) const
+void Shader::setUniform4f(const std::string &name, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3) const
 {
     glUniform4f(glGetUniformLocation(ID, name.c_str()), v0, v1, v2, v3);
 }

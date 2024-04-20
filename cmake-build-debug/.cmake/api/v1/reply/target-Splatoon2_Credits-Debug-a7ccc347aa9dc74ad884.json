@@ -81,9 +81,9 @@
 			},
 			"sourceIndexes" : 
 			[
-				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -142,16 +142,17 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -165,6 +166,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/color.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/stb_image.h",
 			"sourceGroupIndex" : 0
 		},
 		{

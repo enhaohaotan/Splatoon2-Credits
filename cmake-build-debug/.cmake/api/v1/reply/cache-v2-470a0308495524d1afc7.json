@@ -1622,34 +1622,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "DOXYGEN_EXECUTABLE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Doxygen documentation generation tool (https://www.doxygen.nl)"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "C:/Program Files/doxygen/bin/doxygen.exe"
-		},
-		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Doxygen",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding Doxygen"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[C:/Program Files/doxygen/bin/doxygen.exe][cfound components: doxygen ][v1.10.0()]"
-		},
-		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
 			"properties" : 
 			[

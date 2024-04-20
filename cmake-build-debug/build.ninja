@@ -651,6 +651,20 @@ build libraries/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}libr
 
 build cmake_object_order_depends_target_Splatoon2_Credits: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
 
+build src/CMakeFiles/Splatoon2_Credits.dir/Shader.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/Shader.cpp || cmake_object_order_depends_target_Splatoon2_Credits
+  DEP_FILE = src\CMakeFiles\Splatoon2_Credits.dir\Shader.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include
+  OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Splatoon2_Credits.dir
+
+build src/CMakeFiles/Splatoon2_Credits.dir/color.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/color.cpp || cmake_object_order_depends_target_Splatoon2_Credits
+  DEP_FILE = src\CMakeFiles\Splatoon2_Credits.dir\color.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include
+  OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Splatoon2_Credits.dir
+
 build src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/main.cpp || cmake_object_order_depends_target_Splatoon2_Credits
   DEP_FILE = src\CMakeFiles\Splatoon2_Credits.dir\main.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always
@@ -666,7 +680,7 @@ build src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj: CXX_COMPILER__Splatoon2
 #############################################
 # Link the executable src\Splatoon2_Credits.exe
 
-build src/Splatoon2_Credits.exe: CXX_EXECUTABLE_LINKER__Splatoon2_Credits_Debug src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj | libraries/glad/libglad.a libraries/glfw/src/libglfw3.a || libraries/glad/libglad.a libraries/glfw/src/libglfw3.a
+build src/Splatoon2_Credits.exe: CXX_EXECUTABLE_LINKER__Splatoon2_Credits_Debug src/CMakeFiles/Splatoon2_Credits.dir/Shader.cpp.obj src/CMakeFiles/Splatoon2_Credits.dir/color.cpp.obj src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj | libraries/glad/libglad.a libraries/glfw/src/libglfw3.a || libraries/glad/libglad.a libraries/glfw/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = libraries/glad/libglad.a  libraries/glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir

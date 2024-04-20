@@ -1,26 +1,5 @@
 C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/74132/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\74132\CLionProjects\Splatoon2-Credits -B C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug
-CMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
-CMake Error at CMakeLists.txt:39 (add_subdirectory):
-  The source directory
-
-    C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries
-
-  does not contain a CMakeLists.txt file.
-
-
-CMake Error at CMakeLists.txt:40 (add_subdirectory):
-  The source directory
-
-    C:/Users/74132/CLionProjects/Splatoon2-Credits/src
-
-  does not contain a CMakeLists.txt file.
-
-
--- Configuring incomplete, errors occurred!
+-- Including Win32 support
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug

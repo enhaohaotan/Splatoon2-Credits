@@ -3,16 +3,22 @@
 #include <GLFW/glfw3.h>
 #include <valarray>
 #include <filesystem>
-#include "Shader.h"
+#include <string>
+#include <fstream>
+#include <sstream>
+//#include "Shader.h"
 #include "color.h"
 #include "Mesh.h"
 
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
+
 const GLfloat aspectRatio = 16.0f / 9.0f;
-const GLuint SCR_WIDTH = 800;
-const GLuint SCR_HEIGHT = 450;
+const GLuint SCR_WIDTH = 1600;
+const GLuint SCR_HEIGHT = 900;
 
 struct Point {
     float x, y;
@@ -20,11 +26,12 @@ struct Point {
 } points;
 
 GLint frameCount = 0;
+GLint frameIndex = 0;
 GLfloat speed = 0.002f;
 
 void framebuffer_size_callback(GLFWwindow* window, GLint width, GLint height)
 {
-    glViewport(0, 0, width, height);
+    glViewport(0, 0, width*2, height*2);
 }
 
 void window_size_callback(GLFWwindow* window, int width, int height) {
@@ -43,7 +50,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
         glfwGetWindowSize(window, &width, &height);
 
         float x = (float)xpos / width * 2.0f - 1.0f;
-        float y = -((float)ypos / height * 2.0f - 1.0f);
+        float y = -((float)ypos / height * 2.0f - 1.0f) / 2;
 
         points.x = x;
         points.y = y;
@@ -56,15 +63,15 @@ void processInput(GLFWwindow *window)
         glfwSetWindowShouldClose(window, true);
 }
 
-GLFWwindow* initialize()
+GLFWwindow* initializeWindow()
 {
     // glfw: initialize and configure
     // ------------------------------
     glfwInit();
-//    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
     // glfw window creation
     // --------------------
@@ -76,11 +83,11 @@ GLFWwindow* initialize()
         return nullptr;
     }
     glfwMakeContextCurrent(window);
-    glfwSetWindowSizeCallback(window, window_size_callback);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+//    glfwSetWindowSizeCallback(window, window_size_callback);
+//    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     glfwSetMouseButtonCallback(window, mouse_button_callback);
 
-    // glad: load all OpenGL function pointers
+//     glad: load all OpenGL function pointers
     // ---------------------------------------
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
@@ -88,156 +95,348 @@ GLFWwindow* initialize()
         return nullptr;
     }
 
-    return window;
-}
-
-int main()
-{
-    std::cout << "Current Working Directory: "
-              << std::filesystem::current_path()
-              << std::endl;
-
-    GLFWwindow* window = initialize();
     glEnable(GL_PROGRAM_POINT_SIZE);
     glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
+    return window;
+}
 
-    if (!window) return -1;
+void loadTexture(GLuint& texture, const GLchar* path)
+{
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
 
-    Shader wallShader("../../shaders/wall.vert", "../../shaders/wall.frag");
-    Shader splashShader("../../shaders/splash.vert", "../../shaders/splash.frag");
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    GLfloat wallVertices[] = {
-        // positions          // texture coords
-        1.0f,  1.0f, 0.0f,    1.0f, 1.0f,   // top right
-        1.0f, -1.0f, 0.0f,    1.0f, 0.0f,   // bottom right
-        -1.0f, -1.0f, 0.0f,   0.0f, 0.0f,   // bottom left
-        -1.0f,  1.0f, 0.0f,   0.0f, 1.0f    // top left
+    GLint width, height, channels;
+    GLubyte *data = stbi_load(path, &width, &height, &channels, 0);
+
+    GLenum format;
+    switch (channels) {
+        case 3: format = GL_RGB; break;
+        case 4: format = GL_RGBA; break;
+        default: format = GL_RGB;  // Default fall-back
+    }
+
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(data);
+}
+
+void loadShader(GLuint& shaderProgram, const GLchar *vertexPath, const GLchar *fragmentPath)
+{
+    std::string vertexCode;
+    std::string fragmentCode;
+    std::ifstream vShaderFile;
+    std::ifstream fShaderFile;
+
+    vShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
+    fShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
+
+    try
+    {
+        vShaderFile.open(vertexPath);
+        fShaderFile.open(fragmentPath);
+
+        std::stringstream vShaderStream, fShaderStream;
+        vShaderStream << vShaderFile.rdbuf();
+        fShaderStream << fShaderFile.rdbuf();
+
+        vShaderFile.close();
+        fShaderFile.close();
+
+        vertexCode   = vShaderStream.str();
+        fragmentCode = fShaderStream.str();
+    }
+    catch(std::ifstream::failure &e)
+    {
+        std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
+    }
+
+    const GLchar* vShaderCode = vertexCode.c_str();
+    const GLchar* fShaderCode = fragmentCode.c_str();
+
+    GLuint vertex, fragment;
+    GLint success;
+    GLchar infoLog[512];
+
+    vertex = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vertex, 1, &vShaderCode, nullptr);
+    glCompileShader(vertex);
+
+    glGetShaderiv(vertex, GL_COMPILE_STATUS, &success);
+    if(!success)
+    {
+        glGetShaderInfoLog(vertex, 512, nullptr, infoLog);
+        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
     };
 
-    GLuint wallIndices[] = {  // note that we start from 0!
-        0, 1, 3,  // first Triangle
-        1, 2, 3   // second Triangle
+    fragment = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragment, 1, &fShaderCode, nullptr);
+    glCompileShader(fragment);
+
+    glGetShaderiv(fragment, GL_COMPILE_STATUS, &success);
+    if(!success)
+    {
+        glGetShaderInfoLog(fragment, 512, nullptr, infoLog);
+        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+
+    shaderProgram = glCreateProgram();
+    glAttachShader(shaderProgram, vertex);
+    glAttachShader(shaderProgram, fragment);
+    glLinkProgram(shaderProgram);
+
+    if(!success)
+    {
+        glGetProgramInfoLog(shaderProgram, 512, nullptr, infoLog);
+        std::cout << "ERROR::SHADER::PROGRAM::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+
+    glDeleteShader(vertex);
+    glDeleteShader(fragment);
+}
+
+void setWallVertices(GLuint& vbo, GLuint& ebo, GLuint& vao)
+{
+//    GLfloat vertices[] = {
+//            // positions                     // texture coords
+//            1.0f,  1.0f, 0.0f,    1.0f, 2.0f,   // top right
+//            1.0f, -1.0f, 0.0f,    1.0f, 0.0f,   // bottom right
+//            -1.0f, -1.0f, 0.0f,   0.0f, 0.0f,   // bottom left
+//            -1.0f,  1.0f, 0.0f,   0.0f, 2.0f    // top left
+//    };
+
+    GLfloat vertices[] = {
+            // positions                     // texture coords
+            1.0f,  1.0f, 0.0f,    1.0f, 1.0f,   // top right
+            1.0f, -1.0f, 0.0f,    1.0f, 0.0f,   // bottom right
+            -1.0f, -1.0f, 0.0f,   0.0f, 0.0f,   // bottom left
+            -1.0f,  1.0f, 0.0f,   0.0f, 1.0f    // top left
     };
 
-    GLfloat splashVertices[] = {
-        0.0f, 0.0f, 0.0f, static_cast<float>(SCR_WIDTH) / 2,
-//        0.5f,  0.5f, 0.0f, static_cast<float>(SCR_WIDTH) / 2,
-//        0.5f, -0.5f, 0.0f, static_cast<float>(SCR_WIDTH) / 2,
-//        -0.5f, -0.5f, 0.0f, static_cast<float>(SCR_WIDTH) / 2,
-//        -0.5f,  0.5f, 0.0f, static_cast<float>(SCR_WIDTH) / 2,
+    GLuint indices[] = {  // note that we start from 0!
+            0, 1, 3,  // first Triangle
+            1, 2, 3   // second Triangle
     };
 
-    GLuint wallVBO, wallVAO, wallEBO;
-    glGenVertexArrays(1, &wallVAO);
-    glGenBuffers(1, &wallVBO);
-    glGenBuffers(1, &wallEBO);
+    glGenVertexArrays(1, &vao);
+    glGenBuffers(1, &vbo);
+    glGenBuffers(1, &ebo);
 
-    glBindVertexArray(wallVAO);
-    glBindBuffer(GL_ARRAY_BUFFER, wallVBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(wallVertices), wallVertices, GL_STATIC_DRAW);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, wallEBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(wallIndices), wallIndices, GL_STATIC_DRAW);
+    glBindVertexArray(vao);
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void*)0);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat)));
     glEnableVertexAttribArray(1);
+}
 
-    GLuint splashVBO, splashVAO;
-    glGenVertexArrays(1, &splashVAO);
-    glGenBuffers(1, &splashVBO);
+void setSplashVertices(GLuint& vbo, GLuint& vao)
+{
+    GLfloat vertices[] = {
+            0.0f, 0.0f, 0.0f, static_cast<float>(SCR_WIDTH) / 2
+    };
 
-    glBindVertexArray(splashVAO);
-    glBindBuffer(GL_ARRAY_BUFFER, splashVBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(splashVertices), splashVertices, GL_STATIC_DRAW);
+    glGenVertexArrays(1, &vao);
+    glGenBuffers(1, &vbo);
+
+    glBindVertexArray(vao);
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (void*)0);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 1, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat)));
     glEnableVertexAttribArray(1);
+}
 
+void setFrameBufferVertices(GLuint& vbo, GLuint& ebo, GLuint& vao)
+{
+    GLfloat vertices[] = {
+            // positions                     // texture coords
+            1.0f,  1.0f, 0.0f,    1.0f, 0.75f,   // top right
+            1.0f, -1.0f, 0.0f,    1.0f, 0.25f,   // bottom right
+            -1.0f, -1.0f, 0.0f,   0.0f, 0.25f,   // bottom left
+            -1.0f,  1.0f, 0.0f,   0.0f, 0.75f    // top left
+    };
+
+    GLuint indices[] = {  // note that we start from 0!
+            0, 1, 3,  // first Triangle
+            1, 2, 3   // second Triangle
+    };
+
+    glGenVertexArrays(1, &vao);
+    glGenBuffers(1, &vbo);
+    glGenBuffers(1, &ebo);
+
+    glBindVertexArray(vao);
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void*)0);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat)));
+    glEnableVertexAttribArray(1);
+}
+
+void setFrameBuffer(GLuint& fbo, GLuint& texture)
+{
+    glGenFramebuffers(1, &fbo);
+    glBindFramebuffer(GL_FRAMEBUFFER, fbo);
+
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, SCR_WIDTH, SCR_HEIGHT * 2, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+//    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, SCR_WIDTH, SCR_HEIGHT, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+    GLfloat borderColor[] = {1.0f, 1.0f, 1.0f, 0.0f};
+    glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
+
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture, 0);
+
+    if(glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
+    {
+        std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
+    }
+    glBindTexture(GL_TEXTURE_2D, 0);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+}
+
+void drawTexture()
+{
+    GLint width = SCR_WIDTH, height = SCR_HEIGHT * 2; // 这些应该是FBO的尺寸
+//    glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_WIDTH, &width);
+//    glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_HEIGHT, &height);
+
+    glReadBuffer(GL_COLOR_ATTACHMENT0);
+    std::vector<unsigned char> pixels(width * height * 4); // 4代表RGBA
+
+    glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE, pixels.data());
+    stbi_write_png((std::to_string(frameCount)+".png").c_str(), width, height, 4, pixels.data(), width * 4);
+}
+
+int main()
+{
+//    std::cout << "Current Working Directory: "
+//              << std::filesystem::current_path()
+//              << std::endl;
+
+    GLFWwindow* window = initializeWindow();
+
+    if (!window) return -1;
+
+    GLuint wallShader, splashShader;
+    loadShader(wallShader, "../../shaders/wall.vert", "../../shaders/wall.frag");
+    loadShader(splashShader, "../../shaders/splash.vert", "../../shaders/splash.frag");
+
+    GLuint wallVBO, wallVAO, wallEBO;
+    setWallVertices(wallVBO, wallEBO, wallVAO);
+
+    GLuint fboVBO, fboVAO, fboEBO;
+    setFrameBufferVertices(fboVBO, fboEBO, fboVAO);
+
+    GLuint splashVBO, splashVAO;
+    setSplashVertices(splashVBO, splashVAO);
 
     GLuint wallTexture;
-    glGenTextures(1, &wallTexture);
-    glBindTexture(GL_TEXTURE_2D, wallTexture);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    GLint wallWidth, wallHeight, wallChannels;
-    GLubyte *wallData = stbi_load("../../textures/seamless_wall.jpg", &wallWidth, &wallHeight, &wallChannels, 0);
-    if (wallData)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, wallWidth, wallHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, wallData);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    else
-    {
-        std::cout << "Failed to load texture" << std::endl;
-    }
-    stbi_image_free(wallData);
+    loadTexture(wallTexture, "../../textures/seamless_wall.jpg");
 
     GLuint splashTexture;
-    glGenTextures(1, &splashTexture);
-    glBindTexture(GL_TEXTURE_2D, splashTexture);
+    loadTexture(splashTexture, "../../textures/splash.png");
 
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    GLuint fbo[2];
+    GLuint fboTexture[2];
+    setFrameBuffer(fbo[0], fboTexture[0]);
+    setFrameBuffer(fbo[1], fboTexture[1]);
 
-    GLint splashWidth, splashHeight, splashChannels;
-    GLubyte *splashData = stbi_load("../../textures/splash.png", &splashWidth, &splashHeight, &splashChannels, 0);
-    if (splashData)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, splashWidth, splashHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, splashData);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    else
-    {
-        std::cout << "Failed to load texture" << std::endl;
-    }
-    stbi_image_free(splashData);
-
-    // uncomment this call to draw in wireframe polygons.
-//    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    // render initial empty wall
+    glBindFramebuffer(GL_FRAMEBUFFER, fbo[frameIndex]);
+    glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT * 2);
+    glUseProgram(wallShader);
+    glBindVertexArray(wallVAO);
+    glBindTexture(GL_TEXTURE_2D, wallTexture);
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
     // render loop
     // -----------
+    bool isPressed, wasPressed = false;
     while(!glfwWindowShouldClose(window))
     {
-        processInput(window);
         frameCount++;
+        processInput(window);
+
+        // render last frame into current window
+        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
         glClear(GL_COLOR_BUFFER_BIT);
+        glUseProgram(wallShader);
+        glUniform1f(glGetUniformLocation(wallShader, "offsetY"), 0);
+        glBindTexture(GL_TEXTURE_2D, fboTexture[frameIndex]);
+        glBindVertexArray(fboVAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-        wallShader.use();
-        glBindVertexArray(wallVAO);
+        // render current frame into frame buffer
+        frameIndex = frameIndex == 1 ? 0 : 1;
+        glBindFramebuffer(GL_FRAMEBUFFER, fbo[frameIndex]);
+        glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT * 2);
+        glClear(GL_COLOR_BUFFER_BIT);
+        glUseProgram(wallShader);
+        glUniform1f(glGetUniformLocation(wallShader, "offsetY"), static_cast<float>(frameCount) * speed);
         glBindTexture(GL_TEXTURE_2D, wallTexture);
-        glDrawElements(GL_TRIANGLES, sizeof(wallIndices) / sizeof(GLuint), GL_UNSIGNED_INT, 0);
+        glBindVertexArray(wallVAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-        splashShader.use();
-        glBindVertexArray(splashVAO);
-        glBindTexture(GL_TEXTURE_2D, splashTexture);
+        glUniform1f(glGetUniformLocation(wallShader, "offsetY"), speed);
+        frameIndex = frameIndex == 1 ? 0 : 1;
+        glBindTexture(GL_TEXTURE_2D, fboTexture[frameIndex]);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        frameIndex = frameIndex == 1 ? 0 : 1;
 
-        // set splash size
-        int windowWidth, windowHeight;
-        glfwGetWindowSize(window, &windowWidth, &windowHeight);
-        float size = static_cast<float>(windowWidth) / 2;
-        glBufferSubData(GL_ARRAY_BUFFER, 3 * sizeof(GLfloat), sizeof(GLfloat), &size);
-        float coord[] = {points.x, points.y};
-        glBufferSubData(GL_ARRAY_BUFFER, 0, 2 * sizeof(GLfloat), &coord);
-
-        Color::RGB rgb = HSVtoRGB(Color::HSV {static_cast<float>(frameCount % 360), 0.5f, 0.5f});
-
-
-//        rgb = Color::HSVtoRGB((Color::HSV {static_cast<float>((frameCount + 180) % 360), 0.5f, 0.5f}));
-        glUniform3f(glGetUniformLocation(splashShader.ID, "splashColor"), rgb.r, rgb.g, rgb.b);
-        glDrawArrays(GL_POINTS, 0, sizeof(splashVertices) / sizeof(GLfloat));
+        isPressed = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
+        if (isPressed && !wasPressed)
+        {
+            glUseProgram(splashShader);
+            glBindTexture(GL_TEXTURE_2D, splashTexture);
+            // set splash size
+            int windowWidth, windowHeight;
+            glfwGetWindowSize(window, &windowWidth, &windowHeight);
+            float size = static_cast<float>(windowWidth) / 2;
+            glBufferSubData(GL_ARRAY_BUFFER, 3 * sizeof(GLfloat), sizeof(GLfloat), &size);
+            // set splash position
+            float coord[] = {points.x, points.y};
+            glBufferSubData(GL_ARRAY_BUFFER, 0, 2 * sizeof(GLfloat), &coord);
+            Color::RGB rgb = HSVtoRGB(Color::HSV {static_cast<float>(frameCount % (360 * 3)) / 3, 0.6f, 0.8f});
+            glUniform3f(glGetUniformLocation(splashShader, "splashColor"), rgb.r, rgb.g, rgb.b);
+            glBindVertexArray(splashVAO);
+            glDrawArrays(GL_POINTS, 0, 4);
+        }
+        wasPressed = isPressed;
 
 
         glfwSwapBuffers(window);
@@ -245,10 +444,11 @@ int main()
     }
 
     glDeleteVertexArrays(1, &wallVAO);
-    glad_glDeleteVertexArrays(1, &splashVAO);
+    glDeleteVertexArrays(1, &splashVAO);
     glDeleteBuffers(1, &wallVBO);
     glDeleteBuffers(1, &splashVBO);
     glDeleteBuffers(1, &wallEBO);
+
 
     glfwTerminate();
     return 0;

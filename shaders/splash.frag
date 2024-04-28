@@ -7,5 +7,5 @@ uniform sampler2D textureSampler;
 void main() {
 
     vec4 texColor = texture(textureSampler, gl_PointCoord);
-    FragColor = vec4(splashColor, texColor.a);
+    FragColor = vec4(splashColor, texColor.a < 1.0 ? 0.0 : 1.0);
 }

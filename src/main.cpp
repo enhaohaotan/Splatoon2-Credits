@@ -110,8 +110,8 @@ void loadTexture(GLuint& texture, const GLchar* path)
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
     GLint width, height, channels;
     GLubyte *data = stbi_load(path, &width, &height, &channels, 0);
@@ -368,7 +368,7 @@ int main()
     loadTexture(wallTexture, "../../textures/seamless_wall.jpg");
 
     GLuint splashTexture;
-    loadTexture(splashTexture, "../../textures/splash.png");
+    loadTexture(splashTexture, "../../textures/splash_white.png");
 
     GLuint fbo[2];
     GLuint fboTexture[2];

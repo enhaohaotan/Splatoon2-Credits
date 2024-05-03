@@ -148,21 +148,21 @@
 				{
 					"directoryIndex" : 5,
 					"id" : "Splatoon2_Credits::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Splatoon2_Credits-Debug-a7ccc347aa9dc74ad884.json",
+					"jsonFile" : "target-Splatoon2_Credits-Debug-7cd9dbd8439cbeafaf32.json",
 					"name" : "Splatoon2_Credits",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "glad::@3dc4ab03f6fdfa199928",
-					"jsonFile" : "target-glad-Debug-d74683d7257745ceb5b8.json",
+					"jsonFile" : "target-glad-Debug-040754a36c2a5427e832.json",
 					"name" : "glad",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "glfw::@7d8f67159c48f691a52d",
-					"jsonFile" : "target-glfw-Debug-f72c5a0cb808bba7af4e.json",
+					"jsonFile" : "target-glfw-Debug-9ee3e480aaa899827939.json",
 					"name" : "glfw",
 					"projectIndex" : 1
 				},
@@ -186,8 +186,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug",
-		"source" : "C:/Users/74132/CLionProjects/Splatoon2-Credits"
+		"build" : "C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug",
+		"source" : "C:/Users/74132/Desktop/Splatoon2-Credits"
 	},
 	"version" : 
 	{

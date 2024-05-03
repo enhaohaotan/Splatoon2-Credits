@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries
+# Install script for directory: C:/Users/74132/Desktop/Splatoon2-Credits/libraries
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glad/cmake_install.cmake")
-  include("C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/cmake_install.cmake")
+  include("C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glad/cmake_install.cmake")
+  include("C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/cmake_install.cmake")
 
 endif()
 

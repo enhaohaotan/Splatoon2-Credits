@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/74132/CLionProjects/Splatoon2-Credits/src
+# Install script for directory: C:/Users/74132/Desktop/Splatoon2-Credits/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

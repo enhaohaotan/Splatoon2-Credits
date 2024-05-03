@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -56,7 +56,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\CLionProjects\Splatoon2-Credits -BC:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\Desktop\Splatoon2-Credits -BC:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -74,7 +74,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -86,7 +86,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -98,7 +98,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -107,7 +107,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/74132/CLionProjects/Splatoon2-Credits/CMakeLists.txt
+# C:/Users/74132/Desktop/Splatoon2-Credits/CMakeLists.txt
 # =============================================================================
 
 
@@ -115,7 +115,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for edit_cache
 
 build libraries/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -126,7 +126,7 @@ build libraries/edit_cache: phony libraries/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build libraries/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\CLionProjects\Splatoon2-Credits -BC:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\Desktop\Splatoon2-Credits -BC:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -144,7 +144,7 @@ build libraries/list_install_components: phony
 # Utility command for install
 
 build libraries/CMakeFiles/install.util: CUSTOM_COMMAND libraries/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -156,7 +156,7 @@ build libraries/install: phony libraries/CMakeFiles/install.util
 # Utility command for install/local
 
 build libraries/CMakeFiles/install/local.util: CUSTOM_COMMAND libraries/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -168,7 +168,7 @@ build libraries/install/local: phony libraries/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build libraries/CMakeFiles/install/strip.util: CUSTOM_COMMAND libraries/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -177,7 +177,7 @@ build libraries/install/strip: phony libraries/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/CMakeLists.txt
+# C:/Users/74132/Desktop/Splatoon2-Credits/libraries/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -189,10 +189,10 @@ build libraries/install/strip: phony libraries/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_glad: phony || libraries/glad/CMakeFiles/glad.dir
 
-build libraries/glad/CMakeFiles/glad.dir/src/glad.c.obj: C_COMPILER__glad_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/src/glad.c || cmake_object_order_depends_target_glad
+build libraries/glad/CMakeFiles/glad.dir/src/glad.c.obj: C_COMPILER__glad_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/src/glad.c || cmake_object_order_depends_target_glad
   DEP_FILE = libraries\glad\CMakeFiles\glad.dir\src\glad.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include
   OBJECT_DIR = libraries\glad\CMakeFiles\glad.dir
   OBJECT_FILE_DIR = libraries\glad\CMakeFiles\glad.dir\src
   TARGET_COMPILE_PDB = libraries\glad\CMakeFiles\glad.dir\glad.pdb
@@ -220,7 +220,7 @@ build libraries/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug libraries/gl
 # Utility command for edit_cache
 
 build libraries/glad/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -231,7 +231,7 @@ build libraries/glad/edit_cache: phony libraries/glad/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build libraries/glad/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\CLionProjects\Splatoon2-Credits -BC:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\Desktop\Splatoon2-Credits -BC:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -249,7 +249,7 @@ build libraries/glad/list_install_components: phony
 # Utility command for install
 
 build libraries/glad/CMakeFiles/install.util: CUSTOM_COMMAND libraries/glad/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -261,7 +261,7 @@ build libraries/glad/install: phony libraries/glad/CMakeFiles/install.util
 # Utility command for install/local
 
 build libraries/glad/CMakeFiles/install/local.util: CUSTOM_COMMAND libraries/glad/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -273,7 +273,7 @@ build libraries/glad/install/local: phony libraries/glad/CMakeFiles/install/loca
 # Utility command for install/strip
 
 build libraries/glad/CMakeFiles/install/strip.util: CUSTOM_COMMAND libraries/glad/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glad && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -282,7 +282,7 @@ build libraries/glad/install/strip: phony libraries/glad/CMakeFiles/install/stri
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/CMakeLists.txt
+# C:/Users/74132/Desktop/Splatoon2-Credits/libraries/CMakeLists.txt
 # =============================================================================
 
 
@@ -296,7 +296,7 @@ build libraries/glfw/uninstall: phony libraries/glfw/CMakeFiles/uninstall
 # Utility command for edit_cache
 
 build libraries/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -307,7 +307,7 @@ build libraries/glfw/edit_cache: phony libraries/glfw/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build libraries/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\CLionProjects\Splatoon2-Credits -BC:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\Desktop\Splatoon2-Credits -BC:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -325,7 +325,7 @@ build libraries/glfw/list_install_components: phony
 # Utility command for install
 
 build libraries/glfw/CMakeFiles/install.util: CUSTOM_COMMAND libraries/glfw/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -337,7 +337,7 @@ build libraries/glfw/install: phony libraries/glfw/CMakeFiles/install.util
 # Utility command for install/local
 
 build libraries/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND libraries/glfw/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -349,7 +349,7 @@ build libraries/glfw/install/local: phony libraries/glfw/CMakeFiles/install/loca
 # Utility command for install/strip
 
 build libraries/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND libraries/glfw/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -361,11 +361,11 @@ build libraries/glfw/install/strip: phony libraries/glfw/CMakeFiles/install/stri
 # Custom command for libraries\glfw\CMakeFiles\uninstall
 
 build libraries/glfw/CMakeFiles/uninstall | ${cmake_ninja_workdir}libraries/glfw/CMakeFiles/uninstall: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/cmake_uninstall.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMakeLists.txt
+# C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -377,211 +377,211 @@ build libraries/glfw/CMakeFiles/uninstall | ${cmake_ninja_workdir}libraries/glfw
 
 build cmake_object_order_depends_target_glfw: phony || libraries/glfw/src/CMakeFiles/glfw.dir
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/context.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/init.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\init.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/input.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\input.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/platform.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\platform.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/window.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\window.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/win32_module.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = libraries\glfw\src\libglfw3.pdb
 
-build libraries/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
+build libraries/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = libraries\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src -IC:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
   OBJECT_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libraries\glfw\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = libraries\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -615,7 +615,7 @@ build libraries/glfw/src/update_mappings: phony libraries/glfw/src/CMakeFiles/up
 # Utility command for edit_cache
 
 build libraries/glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -626,7 +626,7 @@ build libraries/glfw/src/edit_cache: phony libraries/glfw/src/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build libraries/glfw/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\CLionProjects\Splatoon2-Credits -BC:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\Desktop\Splatoon2-Credits -BC:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -644,7 +644,7 @@ build libraries/glfw/src/list_install_components: phony
 # Utility command for install
 
 build libraries/glfw/src/CMakeFiles/install.util: CUSTOM_COMMAND libraries/glfw/src/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -656,7 +656,7 @@ build libraries/glfw/src/install: phony libraries/glfw/src/CMakeFiles/install.ut
 # Utility command for install/local
 
 build libraries/glfw/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libraries/glfw/src/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -668,7 +668,7 @@ build libraries/glfw/src/install/local: phony libraries/glfw/src/CMakeFiles/inst
 # Utility command for install/strip
 
 build libraries/glfw/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libraries/glfw/src/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -680,12 +680,12 @@ build libraries/glfw/src/install/strip: phony libraries/glfw/src/CMakeFiles/inst
 # Custom command for libraries\glfw\src\CMakeFiles\update_mappings
 
 build libraries/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}libraries/glfw/src/CMakeFiles/update_mappings: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\libraries\glfw\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/74132/CLionProjects/Splatoon2-Credits/CMakeLists.txt
+# C:/Users/74132/Desktop/Splatoon2-Credits/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -697,28 +697,37 @@ build libraries/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}libr
 
 build cmake_object_order_depends_target_Splatoon2_Credits: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
 
-build src/CMakeFiles/Splatoon2_Credits.dir/Shader.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/Shader.cpp || cmake_object_order_depends_target_Splatoon2_Credits
+build src/CMakeFiles/Splatoon2_Credits.dir/Mesh.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/src/Mesh.cpp || cmake_object_order_depends_target_Splatoon2_Credits
+  DEP_FILE = src\CMakeFiles\Splatoon2_Credits.dir\Mesh.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include
+  OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Splatoon2_Credits.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\Splatoon2_Credits.dir\
+  TARGET_PDB = src\Splatoon2_Credits.pdb
+
+build src/CMakeFiles/Splatoon2_Credits.dir/Shader.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/src/Shader.cpp || cmake_object_order_depends_target_Splatoon2_Credits
   DEP_FILE = src\CMakeFiles\Splatoon2_Credits.dir\Shader.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include
   OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir
   OBJECT_FILE_DIR = src\CMakeFiles\Splatoon2_Credits.dir
   TARGET_COMPILE_PDB = src\CMakeFiles\Splatoon2_Credits.dir\
   TARGET_PDB = src\Splatoon2_Credits.pdb
 
-build src/CMakeFiles/Splatoon2_Credits.dir/color.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/color.cpp || cmake_object_order_depends_target_Splatoon2_Credits
+build src/CMakeFiles/Splatoon2_Credits.dir/color.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/src/color.cpp || cmake_object_order_depends_target_Splatoon2_Credits
   DEP_FILE = src\CMakeFiles\Splatoon2_Credits.dir\color.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include
   OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir
   OBJECT_FILE_DIR = src\CMakeFiles\Splatoon2_Credits.dir
   TARGET_COMPILE_PDB = src\CMakeFiles\Splatoon2_Credits.dir\
   TARGET_PDB = src\Splatoon2_Credits.pdb
 
-build src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/main.cpp || cmake_object_order_depends_target_Splatoon2_Credits
+build src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj: CXX_COMPILER__Splatoon2_Credits_unscanned_Debug C$:/Users/74132/Desktop/Splatoon2-Credits/src/main.cpp || cmake_object_order_depends_target_Splatoon2_Credits
   DEP_FILE = src\CMakeFiles\Splatoon2_Credits.dir\main.cpp.obj.d
   FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include
+  INCLUDES = -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include -IC:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include
   OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir
   OBJECT_FILE_DIR = src\CMakeFiles\Splatoon2_Credits.dir
   TARGET_COMPILE_PDB = src\CMakeFiles\Splatoon2_Credits.dir\
@@ -732,7 +741,7 @@ build src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj: CXX_COMPILER__Splatoon2
 #############################################
 # Link the executable src\Splatoon2_Credits.exe
 
-build src/Splatoon2_Credits.exe: CXX_EXECUTABLE_LINKER__Splatoon2_Credits_Debug src/CMakeFiles/Splatoon2_Credits.dir/Shader.cpp.obj src/CMakeFiles/Splatoon2_Credits.dir/color.cpp.obj src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj | libraries/glad/libglad.a libraries/glfw/src/libglfw3.a || libraries/glad/libglad.a libraries/glfw/src/libglfw3.a
+build src/Splatoon2_Credits.exe: CXX_EXECUTABLE_LINKER__Splatoon2_Credits_Debug src/CMakeFiles/Splatoon2_Credits.dir/Mesh.cpp.obj src/CMakeFiles/Splatoon2_Credits.dir/Shader.cpp.obj src/CMakeFiles/Splatoon2_Credits.dir/color.cpp.obj src/CMakeFiles/Splatoon2_Credits.dir/main.cpp.obj | libraries/glad/libglad.a libraries/glfw/src/libglfw3.a || libraries/glad/libglad.a libraries/glfw/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = libraries/glad/libglad.a  libraries/glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\Splatoon2_Credits.dir
@@ -748,7 +757,7 @@ build src/Splatoon2_Credits.exe: CXX_EXECUTABLE_LINKER__Splatoon2_Credits_Debug 
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -759,7 +768,7 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\CLionProjects\Splatoon2-Credits -BC:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\74132\Desktop\Splatoon2-Credits -BC:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -777,7 +786,7 @@ build src/list_install_components: phony
 # Utility command for install
 
 build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -789,7 +798,7 @@ build src/install: phony src/CMakeFiles/install.util
 # Utility command for install/local
 
 build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -801,7 +810,7 @@ build src/install/local: phony src/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug\src && C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -833,42 +842,42 @@ build update_mappings: phony libraries/glfw/src/update_mappings
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug
+# Folder: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug
 
 build all: phony libraries/all src/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries
+# Folder: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries
 
 build libraries/all: phony libraries/glad/all libraries/glfw/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glad
+# Folder: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glad
 
 build libraries/glad/all: phony libraries/glad/libglad.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw
+# Folder: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw
 
 build libraries/glfw/all: phony libraries/glfw/src/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
+# Folder: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src
 
 build libraries/glfw/src/all: phony libraries/glfw/src/libglfw3.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/src
+# Folder: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/src
 
 build src/all: phony src/Splatoon2_Credits.exe
 
@@ -879,14 +888,14 @@ build src/all: phony src/Splatoon2_Credits.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/74132/CLionProjects/Splatoon2-Credits/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMake/glfw3.pc.in C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMake/glfw3Config.cmake.in C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/74132/Desktop/Splatoon2-Credits/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMake/glfw3.pc.in C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMake/glfw3Config.cmake.in C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/74132/CLionProjects/Splatoon2-Credits/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMake/glfw3.pc.in C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/CMake/glfw3Config.cmake.in C$:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src/CMakeLists.txt C$:/Users/74132/CLionProjects/Splatoon2-Credits/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/74132/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/74132/Desktop/Splatoon2-Credits/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMake/glfw3.pc.in C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/CMake/glfw3Config.cmake.in C$:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src/CMakeLists.txt C$:/Users/74132/Desktop/Splatoon2-Credits/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

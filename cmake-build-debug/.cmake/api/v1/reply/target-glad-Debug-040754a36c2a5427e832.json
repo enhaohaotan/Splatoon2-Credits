@@ -54,11 +54,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include"
+					"path" : "C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include"
+					"path" : "C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include"
 				}
 			],
 			"language" : "C",

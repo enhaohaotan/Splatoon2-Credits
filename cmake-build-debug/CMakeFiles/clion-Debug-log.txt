@@ -1,4 +1,4 @@
-C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/74132/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\74132\CLionProjects\Splatoon2-Credits -B C:\Users\74132\CLionProjects\Splatoon2-Credits\cmake-build-debug
+C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/74132/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\74132\Desktop\Splatoon2-Credits -B C:\Users\74132\Desktop\Splatoon2-Credits\cmake-build-debug
 -- The C compiler identification is GNU 13.1.0
 -- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
@@ -19,6 +19,6 @@ C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCM
 -- Looking for dinput.h - found
 -- Looking for xinput.h
 -- Looking for xinput.h - found
--- Configuring done (5.4s)
+-- Configuring done (13.5s)
 -- Generating done (0.0s)
--- Build files have been written to: C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug
+-- Build files have been written to: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug

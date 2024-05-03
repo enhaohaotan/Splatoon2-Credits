@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad
+# Install script for directory: C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

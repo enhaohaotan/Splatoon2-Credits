@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug"
+			"value" : "c:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/74132/CLionProjects/Splatoon2-Credits"
+			"value" : "C:/Users/74132/Desktop/Splatoon2-Credits"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1643,7 +1643,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw"
+			"value" : "C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1763,7 +1763,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw"
+			"value" : "C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw"
 		},
 		{
 			"name" : "GLFW_USE_HYBRID_HPG",
@@ -1787,7 +1787,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug"
+			"value" : "C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug"
 		},
 		{
 			"name" : "Splatoon2_Credits_IS_TOP_LEVEL",
@@ -1811,7 +1811,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/74132/CLionProjects/Splatoon2-Credits"
+			"value" : "C:/Users/74132/Desktop/Splatoon2-Credits"
 		},
 		{
 			"name" : "XINPUT_H_FOUND",

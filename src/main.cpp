@@ -16,7 +16,7 @@
 #include "stb_image.h"
 
 
-const GLfloat aspectRatio = 16.0f / 9.0f;
+const GLfloat aspectRatio = 9.0f / 16.0f;
 const GLuint SCR_WIDTH = 1600;
 const GLuint SCR_HEIGHT = 900;
 
@@ -209,16 +209,9 @@ void loadShader(GLuint& shaderProgram, const GLchar *vertexPath, const GLchar *f
     glDeleteShader(fragment);
 }
 
+// This VAO is a full screen overlay
 void setWallVertices(GLuint& vbo, GLuint& ebo, GLuint& vao)
 {
-//    GLfloat vertices[] = {
-//            // positions                     // texture coords
-//            1.0f,  1.0f, 0.0f,    1.0f, 2.0f,   // top right
-//            1.0f, -1.0f, 0.0f,    1.0f, 0.0f,   // bottom right
-//            -1.0f, -1.0f, 0.0f,   0.0f, 0.0f,   // bottom left
-//            -1.0f,  1.0f, 0.0f,   0.0f, 2.0f    // top left
-//    };
-
     GLfloat vertices[] = {
             // positions                     // texture coords
             1.0f,  1.0f, 0.0f,    1.0f, 1.0f,   // top right
@@ -252,7 +245,7 @@ void setWallVertices(GLuint& vbo, GLuint& ebo, GLuint& vao)
 void setSplashVertices(GLuint& vbo, GLuint& vao)
 {
     GLfloat vertices[] = {
-            0.0f, 0.0f, 0.0f, static_cast<float>(SCR_WIDTH) / 2
+            0.0f, 0.0f, 0.0f, static_cast<float>(SCR_WIDTH) / 2,
     };
 
     glGenVertexArrays(1, &vao);
@@ -268,14 +261,17 @@ void setSplashVertices(GLuint& vbo, GLuint& vao)
     glEnableVertexAttribArray(1);
 }
 
+// This VAO is a half screen overlay in the center of the screen
 void setFrameBufferVertices(GLuint& vbo, GLuint& ebo, GLuint& vao)
 {
+    GLfloat down = (1 - aspectRatio) / 2;
+    GLfloat up = 1 - down;
     GLfloat vertices[] = {
             // positions                     // texture coords
-            1.0f,  1.0f, 0.0f,    1.0f, 0.75f,   // top right
-            1.0f, -1.0f, 0.0f,    1.0f, 0.25f,   // bottom right
-            -1.0f, -1.0f, 0.0f,   0.0f, 0.25f,   // bottom left
-            -1.0f,  1.0f, 0.0f,   0.0f, 0.75f    // top left
+            1.0f,  1.0f, 0.0f,    1.0f, up,   // top right
+            1.0f, -1.0f, 0.0f,    1.0f, down,   // bottom right
+            -1.0f, -1.0f, 0.0f,   0.0f, down,   // bottom left
+            -1.0f,  1.0f, 0.0f,   0.0f, up    // top left
     };
 
     GLuint indices[] = {  // note that we start from 0!
@@ -308,8 +304,8 @@ void setFrameBuffer(GLuint& fbo, GLuint& texture)
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
 
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, SCR_WIDTH, SCR_HEIGHT * 2, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
-//    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, SCR_WIDTH, SCR_HEIGHT, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+//    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, SCR_WIDTH, SCR_HEIGHT * 2, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, SCR_WIDTH, SCR_WIDTH, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
@@ -330,7 +326,8 @@ void setFrameBuffer(GLuint& fbo, GLuint& texture)
 
 void drawTexture()
 {
-    GLint width = SCR_WIDTH, height = SCR_HEIGHT * 2; // 这些应该是FBO的尺寸
+//    GLint width = SCR_WIDTH, height = SCR_HEIGHT * 2; // 这些应该是FBO的尺寸
+    GLint width = SCR_WIDTH, height = SCR_WIDTH;
 //    glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_WIDTH, &width);
 //    glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_HEIGHT, &height);
 
@@ -368,7 +365,10 @@ int main()
     loadTexture(wallTexture, "../../textures/seamless_wall.jpg");
 
     GLuint splashTexture;
-    loadTexture(splashTexture, "../../textures/splash_white.png");
+    loadTexture(splashTexture, "../../textures/splash.png");
+
+    GLuint graffitiTexture;
+    loadTexture(graffitiTexture, "../../textures/graffiti1.png");
 
     GLuint fbo[2];
     GLuint fboTexture[2];
@@ -377,7 +377,8 @@ int main()
 
     // render initial empty wall
     glBindFramebuffer(GL_FRAMEBUFFER, fbo[frameIndex]);
-    glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT * 2);
+//    glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT * 2);
+    glViewport(0, 0, SCR_WIDTH, SCR_WIDTH);
     glUseProgram(wallShader);
     glBindVertexArray(wallVAO);
     glBindTexture(GL_TEXTURE_2D, wallTexture);
@@ -404,10 +405,12 @@ int main()
         // render current frame into frame buffer
         frameIndex = frameIndex == 1 ? 0 : 1;
         glBindFramebuffer(GL_FRAMEBUFFER, fbo[frameIndex]);
-        glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT * 2);
+//        glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT * 2);
+        glViewport(0, 0, SCR_WIDTH, SCR_WIDTH);
         glClear(GL_COLOR_BUFFER_BIT);
         glUseProgram(wallShader);
         glUniform1f(glGetUniformLocation(wallShader, "offsetY"), static_cast<float>(frameCount) * speed);
+//        glBindTexture(GL_TEXTURE_2D, wallTexture);
         glBindTexture(GL_TEXTURE_2D, wallTexture);
         glBindVertexArray(wallVAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -422,15 +425,25 @@ int main()
         if (isPressed && !wasPressed)
         {
             glUseProgram(splashShader);
+            glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, splashTexture);
+            glUniform1i(glGetUniformLocation(splashShader, "splashSampler"), 0);
+            glActiveTexture(GL_TEXTURE1);
+            glBindTexture(GL_TEXTURE_2D, graffitiTexture);
+            glUniform1i(glGetUniformLocation(splashShader, "graffitiSampler"), 1);
+            glActiveTexture(GL_TEXTURE0);
+
+            glUniform1f(glGetUniformLocation(splashShader, "offsetY"), static_cast<float>(frameCount) * speed);
             // set splash size
-            int windowWidth, windowHeight;
-            glfwGetWindowSize(window, &windowWidth, &windowHeight);
-            float size = static_cast<float>(windowWidth) / 2;
-            glBufferSubData(GL_ARRAY_BUFFER, 3 * sizeof(GLfloat), sizeof(GLfloat), &size);
+//            int windowWidth, windowHeight;
+//            glfwGetWindowSize(window, &windowWidth, &windowHeight);
+//            float size = static_cast<float>(windowWidth) / 2;
+//            glBufferSubData(GL_ARRAY_BUFFER, 3 * sizeof(GLfloat), sizeof(GLfloat), &size);
             // set splash position
             float coord[] = {points.x, points.y};
+//            std::cout << points.x << " " << points.y << std::endl;
             glBufferSubData(GL_ARRAY_BUFFER, 0, 2 * sizeof(GLfloat), &coord);
+
             Color::RGB rgb = HSVtoRGB(Color::HSV {static_cast<float>(frameCount % (360 * 3)) / 3, 0.6f, 0.8f});
             glUniform3f(glGetUniformLocation(splashShader, "splashColor"), rgb.r, rgb.g, rgb.b);
             glBindVertexArray(splashVAO);

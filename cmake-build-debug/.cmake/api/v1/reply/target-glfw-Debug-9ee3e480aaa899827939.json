@@ -137,19 +137,19 @@
 			[
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glad/include"
+					"path" : "C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glad/include"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/include"
+					"path" : "C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/libraries/glfw/src"
+					"path" : "C:/Users/74132/Desktop/Splatoon2-Credits/libraries/glfw/src"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Users/74132/CLionProjects/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src"
+					"path" : "C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug/libraries/glfw/src"
 				}
 			],
 			"language" : "C",

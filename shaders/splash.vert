@@ -9,5 +9,6 @@ uniform float offsetY;
 void main() {
     gl_Position = vec4(aPos, 1.0);
     gl_PointSize = aSize;
-    TexCoord = vec2(aPos.x, aPos.y - offsetY);
+    TexCoord = vec2(aPos.x, 1 - aPos.y);
+//    TexCoord = vec2(aPos.x, aPos.y);
 }

@@ -26,6 +26,7 @@ struct Point {
 } points;
 
 GLint frameCount = 0;
+GLint textureIndex = 0;
 GLint frameIndex = 0;
 GLfloat speed = 0.002f;
 
@@ -105,6 +106,7 @@ GLFWwindow* initializeWindow()
 
 void loadTexture(GLuint& texture, const GLchar* path)
 {
+//    stbi_set_flip_vertically_on_load(true);
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
 
@@ -367,8 +369,13 @@ int main()
     GLuint splashTexture;
     loadTexture(splashTexture, "../../textures/splash.png");
 
-    GLuint graffitiTexture;
-    loadTexture(graffitiTexture, "../../textures/graffiti1.png");
+    GLuint graffitiTexture[5];
+    loadTexture(graffitiTexture[0], "../../textures/graffiti1.png");
+    loadTexture(graffitiTexture[1], "../../textures/graffiti2.png");
+    loadTexture(graffitiTexture[2], "../../textures/graffiti3.png");
+    loadTexture(graffitiTexture[3], "../../textures/graffiti4.png");
+    loadTexture(graffitiTexture[4], "../../textures/graffiti5.png");
+
 
     GLuint fbo[2];
     GLuint fboTexture[2];
@@ -391,7 +398,6 @@ int main()
     {
         frameCount++;
         processInput(window);
-
         // render last frame into current window
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
         glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
@@ -429,11 +435,11 @@ int main()
             glBindTexture(GL_TEXTURE_2D, splashTexture);
             glUniform1i(glGetUniformLocation(splashShader, "splashSampler"), 0);
             glActiveTexture(GL_TEXTURE1);
-            glBindTexture(GL_TEXTURE_2D, graffitiTexture);
+            glBindTexture(GL_TEXTURE_2D, graffitiTexture[3]);
             glUniform1i(glGetUniformLocation(splashShader, "graffitiSampler"), 1);
             glActiveTexture(GL_TEXTURE0);
-
             glUniform1f(glGetUniformLocation(splashShader, "offsetY"), static_cast<float>(frameCount) * speed);
+
             // set splash size
 //            int windowWidth, windowHeight;
 //            glfwGetWindowSize(window, &windowWidth, &windowHeight);

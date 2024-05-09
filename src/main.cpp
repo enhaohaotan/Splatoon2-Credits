@@ -6,6 +6,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <random>
 //#include "Shader.h"
 #include "color.h"
 #include "Mesh.h"
@@ -25,38 +26,50 @@ struct Point {
     Point() : x(0), y(0) {}
 } points;
 
+Color::RGB rgb;
+
 GLint frameCount = 0;
 GLint textureIndex = 0;
 GLint frameIndex = 0;
 GLfloat speed = 0.002f;
 
-void framebuffer_size_callback(GLFWwindow* window, GLint width, GLint height)
-{
-    glViewport(0, 0, width*2, height*2);
+bool isLeftPressed, wasLeftPressed, isRightPressed, wasRightPressed = false;
+GLint rightCount = 0;
+GLint rightSpeed = 2;
+
+int getRandomInteger(int min, int max) {
+    static std::mt19937 engine(static_cast<unsigned int>(std::time(nullptr)));
+    std::uniform_int_distribution<int> distribution(min, max);
+    return distribution(engine);
 }
 
-void window_size_callback(GLFWwindow* window, int width, int height) {
-    int newHeight = static_cast<int>(width / aspectRatio);
-    if (newHeight != height) {
-        glfwSetWindowSize(window, width, newHeight);
-    }
-}
-
-void mouse_button_callback(GLFWwindow* window, int button, int action, int mods) {
-    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS) {
-        double xpos, ypos;
-        glfwGetCursorPos(window, &xpos, &ypos);
-
-        int width, height;
-        glfwGetWindowSize(window, &width, &height);
-
-        float x = (float)xpos / width * 2.0f - 1.0f;
-        float y = -((float)ypos / height * 2.0f - 1.0f) / 2;
-
-        points.x = x;
-        points.y = y;
-    }
-}
+//void framebuffer_size_callback(GLFWwindow* window, GLint width, GLint height)
+//{
+//    glViewport(0, 0, width*2, height*2);
+//}
+//
+//void window_size_callback(GLFWwindow* window, int width, int height) {
+//    int newHeight = static_cast<int>(width / aspectRatio);
+//    if (newHeight != height) {
+//        glfwSetWindowSize(window, width, newHeight);
+//    }
+//}
+//
+//void mouse_button_callback(GLFWwindow* window, int button, int action, int mods) {
+//    if ((button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS) || button == GLFW_MOUSE_BUTTON_RIGHT) {
+//        double xpos, ypos;
+//        glfwGetCursorPos(window, &xpos, &ypos);
+//
+//        int width, height;
+//        glfwGetWindowSize(window, &width, &height);
+//
+//        float x = (float)xpos / width * 2.0f - 1.0f;
+//        float y = -((float)ypos / height * 2.0f - 1.0f) / 2;
+//
+//        points.x = x;
+//        points.y = y;
+//    }
+//}
 
 void processInput(GLFWwindow *window)
 {
@@ -86,7 +99,7 @@ GLFWwindow* initializeWindow()
     glfwMakeContextCurrent(window);
 //    glfwSetWindowSizeCallback(window, window_size_callback);
 //    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-    glfwSetMouseButtonCallback(window, mouse_button_callback);
+//    glfwSetMouseButtonCallback(window, mouse_button_callback);
 
 //     glad: load all OpenGL function pointers
     // ---------------------------------------
@@ -369,13 +382,15 @@ int main()
     GLuint splashTexture;
     loadTexture(splashTexture, "../../textures/splash.png");
 
-    GLuint graffitiTexture[5];
-    loadTexture(graffitiTexture[0], "../../textures/graffiti1.png");
-    loadTexture(graffitiTexture[1], "../../textures/graffiti2.png");
-    loadTexture(graffitiTexture[2], "../../textures/graffiti3.png");
-    loadTexture(graffitiTexture[3], "../../textures/graffiti4.png");
-    loadTexture(graffitiTexture[4], "../../textures/graffiti5.png");
+    GLuint graffitiTexture;
+    loadTexture(graffitiTexture, "../../textures/graffiti4.png");
 
+    GLuint smallSplashTexture[14];
+    for (int i = 0; i < 14; ++i)
+    {
+        std::string path = "../../textures/splash" + std::to_string(i) + ".png";
+        loadTexture(smallSplashTexture[i], path.c_str());
+    }
 
     GLuint fbo[2];
     GLuint fboTexture[2];
@@ -393,7 +408,7 @@ int main()
 
     // render loop
     // -----------
-    bool isPressed, wasPressed = false;
+
     while(!glfwWindowShouldClose(window))
     {
         frameCount++;
@@ -427,46 +442,74 @@ int main()
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         frameIndex = frameIndex == 1 ? 0 : 1;
 
-        isPressed = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
-        if (isPressed && !wasPressed)
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_RELEASE) {
+            rightCount = 0;
+        }
+        isLeftPressed = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
+        isRightPressed = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_PRESS;
+
+        if (isRightPressed) {
+            rightCount = (rightCount + 1) % rightSpeed;
+        }
+
+        if ((isLeftPressed && !wasLeftPressed) || (isRightPressed && rightCount == 1))
         {
+
             glUseProgram(splashShader);
             glActiveTexture(GL_TEXTURE0);
-            glBindTexture(GL_TEXTURE_2D, splashTexture);
+            if (isRightPressed) {
+                rgb = HSVtoRGB(Color::HSV {static_cast<float>((frameCount + 180 * 3) % (360 * 3)) / 3, 0.6f, 0.8f});
+                GLint index = getRandomInteger(0, 13);
+                glBindTexture(GL_TEXTURE_2D, smallSplashTexture[index]);
+            }
+            else {
+                rgb = HSVtoRGB(Color::HSV {static_cast<float>(frameCount % (360 * 3)) / 3, 0.6f, 0.8f});
+                glBindTexture(GL_TEXTURE_2D, splashTexture);
+            }
+
             glUniform1i(glGetUniformLocation(splashShader, "splashSampler"), 0);
             glActiveTexture(GL_TEXTURE1);
-            glBindTexture(GL_TEXTURE_2D, graffitiTexture[3]);
+            glBindTexture(GL_TEXTURE_2D, graffitiTexture);
             glUniform1i(glGetUniformLocation(splashShader, "graffitiSampler"), 1);
             glActiveTexture(GL_TEXTURE0);
             glUniform1f(glGetUniformLocation(splashShader, "offsetY"), static_cast<float>(frameCount) * speed);
 
-            // set splash size
-//            int windowWidth, windowHeight;
-//            glfwGetWindowSize(window, &windowWidth, &windowHeight);
-//            float size = static_cast<float>(windowWidth) / 2;
-//            glBufferSubData(GL_ARRAY_BUFFER, 3 * sizeof(GLfloat), sizeof(GLfloat), &size);
+            // update coordinates
+            double xpos, ypos;
+            glfwGetCursorPos(window, &xpos, &ypos);
+
+            int width, height;
+            glfwGetWindowSize(window, &width, &height);
+
+            float x = (float)xpos / width * 2.0f - 1.0f;
+            float y = -((float)ypos / height * 2.0f - 1.0f) / 2;
+
+            points.x = x;
+            points.y = y;
+
             // set splash position
             float coord[] = {points.x, points.y};
 //            std::cout << points.x << " " << points.y << std::endl;
             glBufferSubData(GL_ARRAY_BUFFER, 0, 2 * sizeof(GLfloat), &coord);
 
-            Color::RGB rgb = HSVtoRGB(Color::HSV {static_cast<float>(frameCount % (360 * 3)) / 3, 0.6f, 0.8f});
+
+
             glUniform3f(glGetUniformLocation(splashShader, "splashColor"), rgb.r, rgb.g, rgb.b);
             glBindVertexArray(splashVAO);
             glDrawArrays(GL_POINTS, 0, 4);
         }
-        wasPressed = isPressed;
-
+        wasLeftPressed = isLeftPressed;
+        wasRightPressed = isRightPressed;
 
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
 
-    glDeleteVertexArrays(1, &wallVAO);
-    glDeleteVertexArrays(1, &splashVAO);
-    glDeleteBuffers(1, &wallVBO);
-    glDeleteBuffers(1, &splashVBO);
-    glDeleteBuffers(1, &wallEBO);
+//    glDeleteVertexArrays(1, &wallVAO);
+//    glDeleteVertexArrays(1, &splashVAO);
+//    glDeleteBuffers(1, &wallVBO);
+//    glDeleteBuffers(1, &splashVBO);
+//    glDeleteBuffers(1, &wallEBO);
 
 
     glfwTerminate();

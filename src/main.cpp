@@ -7,12 +7,8 @@
 #include <fstream>
 #include <sstream>
 #include <random>
-//#include "Shader.h"
 #include "color.h"
-#include "Mesh.h"
 
-#define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "stb_image_write.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
@@ -341,23 +337,17 @@ void setFrameBuffer(GLuint& fbo, GLuint& texture)
 
 void drawTexture()
 {
-//    GLint width = SCR_WIDTH, height = SCR_HEIGHT * 2; // 这些应该是FBO的尺寸
+//    GLint width = SCR_WIDTH, height = SCR_HEIGHT * 2;
     GLint width = SCR_WIDTH, height = SCR_WIDTH;
-//    glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_WIDTH, &width);
-//    glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_HEIGHT, &height);
 
     glReadBuffer(GL_COLOR_ATTACHMENT0);
-    std::vector<unsigned char> pixels(width * height * 4); // 4代表RGBA
+    std::vector<unsigned char> pixels(width * height * 4);
 
     glReadPixels(0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE, pixels.data());
-    stbi_write_png((std::to_string(frameCount)+".png").c_str(), width, height, 4, pixels.data(), width * 4);
 }
 
 int main()
 {
-//    std::cout << "Current Working Directory: "
-//              << std::filesystem::current_path()
-//              << std::endl;
 
     GLFWwindow* window = initializeWindow();
 

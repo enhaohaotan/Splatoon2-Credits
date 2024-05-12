@@ -19,6 +19,6 @@ C:\Users\74132\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCM
 -- Looking for dinput.h - found
 -- Looking for xinput.h
 -- Looking for xinput.h - found
--- Configuring done (13.5s)
+-- Configuring done (6.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/74132/Desktop/Splatoon2-Credits/cmake-build-debug
